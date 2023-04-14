@@ -1,4 +1,4 @@
 SELECT product_name
-FROM ORDERS
-         JOIN CUSTOMERS ON CUSTOMERS.id = ORDERS.customer_id
+FROM netology_db.ORDERS
+         JOIN netology_db.CUSTOMERS ON CUSTOMERS.id = ORDERS.customer_id
 WHERE UPPER(CUSTOMERS.name) = :name;

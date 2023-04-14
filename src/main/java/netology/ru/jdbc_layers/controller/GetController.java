@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class GetController {
     private final GetService getService;
-    
+
     @GetMapping("/products/fetch-product")
     public List<String> getProductName(@RequestParam(value = "name") String name) {
         return getService.getProductName(name);
